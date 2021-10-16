@@ -1,0 +1,9 @@
+        <nz-form-item>
+          <nz-form-control [nzSpan] = "24" [nzErrorTip]="getError()">
+            <nz-input-group>
+              <nz-form-label>{{this.inputInfo.label | capitalization}}</nz-form-label>
+              <input type="{{this.inputInfo.inputType}}"  nz-input [formControl]="this.formControl" placeholder="Please Enter {{this.inputInfo.label | capitalization}}" (keyup.enter)="onEnter()"/>
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+     
